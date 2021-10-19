@@ -30,13 +30,13 @@ public class Week8MusicianApplication implements CommandLineRunner{
 		ApplicationContext appContext = new AnnotationConfigApplicationContext(BeanConfiguration.class);
 		
 		//Using an existing bean
-		Musician c = appContext.getBean("contact", Musician.class);
+		Musician c = appContext.getBean("musician", Musician.class);
 		c.setGenre("Rock");
 		repo.save(c);
 		
 		//Create a bean to use - not managed by Spring
-		Musician d = new Musician("Sandra Boyton", "555-555-5556", "friend");
-		RecordLabel a = new RecordLabel("987 Elm Court", "Altoona", "IA");
+		Musician d = new Musician("Blink-182", "333-333-3333", "Punk");
+		RecordLabel a = new RecordLabel("Geffen", "Hollywood,CA", "Interscope Records");
 		d.setRecordLabel(a);
 		repo.save(d);
 		

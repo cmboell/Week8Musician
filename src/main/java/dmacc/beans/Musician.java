@@ -29,7 +29,7 @@ public class Musician {
 	public Musician() {
 		super();
 		// TODO Auto-generated constructor stub
-		this.genre = "spouse";
+		this.genre = "Rock";
 	}
 	
 	public Musician(String artistName) {
