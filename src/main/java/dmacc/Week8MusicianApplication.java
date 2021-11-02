@@ -16,13 +16,13 @@ import dmacc.controller.BeanConfiguration;
 import dmacc.repository.MusicianRepository;
 
 @SpringBootApplication
-public class Week8MusicianApplication implements CommandLineRunner{
+public class Week8MusicianApplication /*implements CommandLineRunner*/{
 
 	public static void main(String[] args) {
 		SpringApplication.run(Week8MusicianApplication.class, args);
 	}
 	
-	@Autowired
+	/*@Autowired
 	MusicianRepository repo;
 	@Override
 	public void run(String... args) throws Exception {
@@ -48,6 +48,6 @@ public class Week8MusicianApplication implements CommandLineRunner{
 		//closes the ApplicationContext resource leak - not imperative to add but nice to clean it up
 		((AbstractApplicationContext) appContext).close();
 	
-	}
+	}*/
 
 }
